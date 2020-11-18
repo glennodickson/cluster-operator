@@ -14,3 +14,6 @@ metadata:
     app.kubernetes.io/component: rabbitmq-cluster-operator
     app.kubernetes.io/part-of: rabbitmq
   name: rabbitmq-system
+  annotations:
+    openshift.io/sa.scc.supplemental-groups: 1000/1
+    openshift.io/sa.scc.uid-range: 1000/1
